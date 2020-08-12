@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rummage Application</title>
+</head>
+<body style="background-color: mediumseagreen;">
+    <div style="text-align: center;">
+        <div class="jumbotron" style="background-color: darkgreen;" style="text-shadow: rgb(11, 58, 11);">
+            <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Rummage Sale</h1>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="response">
+        <input class="form-control" id="myInput" type="text" placeholder="Search by Item or Item #">
+    <br>
+    <center>
+        <div class="container">
+            <table class="table table-hover" style="text-decoration: gold;" id="itemTable">
+                <tr>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <hr>
+    <table class="table table-striped" id="itemTable">
+        <tr>
+        </tr>
+    </table>
+    </div>
+    <div>
+        <form id="myForm">
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" style="text-decoration: gold;">Add Item To Rummage</h2>
+            <div class="form-group row">
+
+                <div class="col-xs-3">
+                    <input class="form-control" type="text" name="itemNum" placeholder="Item Number"/>
+                </div>
+                <div class="col-xs-3">
+                    <input class="form-control" type="text" name="itemName" placeholder="Item Name"/>
+                </div>
+                <div class="col-xs-3">
+                    <input class="form-control" type="text" name="itemPrice" placeholder="Item Price"/>
+                </div>
+                <hr>
+                <button style="font-family:Georgia;" type="submit" class="btn btn-default">Add</button>
+                <hr>
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+</body>
+</html>
