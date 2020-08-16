@@ -14,5 +14,6 @@ namespace RummageApp.Data
         {
         }
         public DbSet<RummageApp.Models.Rummage> Rummage { get; set; }
+        public DbSet<Item> Items { get; set; }
     }
 }

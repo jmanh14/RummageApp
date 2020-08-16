@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RummageApp.Data;
 
-namespace RummageApp.Data.Migrations
+namespace RummageApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -234,7 +234,7 @@ namespace RummageApp.Data.Migrations
 
                     b.HasKey("ItemId");
 
-                    b.ToTable("Item");
+                    b.ToTable("Items");
                 });
 
             modelBuilder.Entity("RummageApp.Models.Rummage", b =>
